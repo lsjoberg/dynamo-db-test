@@ -1,0 +1,7 @@
+/Users/linussjoberg/src/DynamoDbTest/DynamoDbTest/obj/rider-publish/DynamoDbTest
+/Users/linussjoberg/src/DynamoDbTest/DynamoDbTest/obj/rider-publish/DynamoDbTest.dll
+/Users/linussjoberg/src/DynamoDbTest/DynamoDbTest/obj/rider-publish/DynamoDbTest.deps.json
+/Users/linussjoberg/src/DynamoDbTest/DynamoDbTest/obj/rider-publish/DynamoDbTest.runtimeconfig.json
+/Users/linussjoberg/src/DynamoDbTest/DynamoDbTest/obj/rider-publish/DynamoDbTest.pdb
+/Users/linussjoberg/src/DynamoDbTest/DynamoDbTest/obj/rider-publish/AWSSDK.Core.dll
+/Users/linussjoberg/src/DynamoDbTest/DynamoDbTest/obj/rider-publish/AWSSDK.DynamoDBv2.dll

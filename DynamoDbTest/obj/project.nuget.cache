@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "xsbdnGpE+1QVW7kiPTRPiVFFGsWZjK9Ibbk2We+VunGuu6l6jTIjfnVCe7pGSDgE86lUv9QfgAUF+gbNTjMEjg==",
+  "success": true,
+  "projectFilePath": "/Users/linussjoberg/src/DynamoDbTest/DynamoDbTest/DynamoDbTest.csproj",
+  "expectedPackageFiles": [
+    "/Users/linussjoberg/.nuget/packages/awssdk.core/3.7.100.8/awssdk.core.3.7.100.8.nupkg.sha512",
+    "/Users/linussjoberg/.nuget/packages/awssdk.dynamodbv2/3.7.100.8/awssdk.dynamodbv2.3.7.100.8.nupkg.sha512"
+  ],
+  "logs": []
+}
