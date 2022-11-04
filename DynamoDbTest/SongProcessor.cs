@@ -5,18 +5,24 @@ namespace DynamoDbTest;
 
 public class SongProcessor
 {
+    private readonly AmazonDynamoDBClient _dbClient;
     private readonly AmazonDynamoDBStreamsClient _streamsClient;
 
-    public SongProcessor(AmazonDynamoDBStreamsClient streamsClient)
-        => _streamsClient = streamsClient;
-
-    public void Start(string streamArn)
+    public SongProcessor(AmazonDynamoDBClient dbClient, AmazonDynamoDBStreamsClient streamsClient)
     {
-        Task.Run(() => RunAsync(streamArn));
+        _dbClient = dbClient;
+        _streamsClient = streamsClient;
     }
 
-    private async Task RunAsync(string streamArn)
+    public void Start()
     {
+        Task.Run(() => RunAsync());
+    }
+
+    private async Task RunAsync()
+    {
+        var streamArn = (await _dbClient.DescribeTableAsync("Music")).Table.LatestStreamArn;
+        
         var describeStreamResponse = await _streamsClient.DescribeStreamAsync(streamArn);
         var shards = describeStreamResponse.StreamDescription.Shards;
 

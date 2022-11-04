@@ -23,11 +23,9 @@ var streamsConfig = new AmazonDynamoDBStreamsConfig
     ServiceURL = "http://localhost:4566"
 };
 
-var arn = (await dbClient.DescribeTableAsync("Music")).Table.LatestStreamArn;
-
 var streamsClient = new AmazonDynamoDBStreamsClient(credentials, streamsConfig);
-var songProcessor = new SongProcessor(streamsClient);
-songProcessor.Start(arn);
+var songProcessor = new SongProcessor(dbClient, streamsClient);
+songProcessor.Start();
 
 while (true)
 {
