@@ -16,7 +16,7 @@ public class SongProcessor
 
     public void Start()
     {
-        Task.Run(() => RunAsync());
+        Task.Run(RunAsync);
     }
 
     private async Task RunAsync()
